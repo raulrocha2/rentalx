@@ -38,7 +38,7 @@ describe("Cars", () => {
 
     const carCreated = await carsRepositoryInMemory.findByLicensePlate(car.license_plate);
 
-    expect(carCreated).toHaveProperty('license_plate');
+    expect(carCreated).toHaveProperty('id');
   });
 
   it("Should not be able to create a car with exists license plate", () => {
@@ -52,6 +52,16 @@ describe("Cars", () => {
         brand: "brand test",
         category_id: "category_id"
       }
+
+      await createCarUseCase.execute({
+        name: car.name,
+        description: car.description,
+        daily_rate: car.daily_rate,
+        license_plate: car.license_plate,
+        fine_amount: car.fine_amount,
+        brand: car.brand,
+        category_id: car.category_id
+      });
 
       await createCarUseCase.execute({
         name: car.name,
@@ -78,8 +88,7 @@ describe("Cars", () => {
       category_id: "category_id"
     });
 
-    console.log(car);
-
     expect(car.is_available).toBe(true)
-  })
+  });
+
 })

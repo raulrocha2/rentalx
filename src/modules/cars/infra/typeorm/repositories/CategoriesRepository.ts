@@ -8,7 +8,7 @@ import { ICategoryRepository, ICreatecategoryDTO } from "@modules/cars/repositor
 class CategoriesRepository implements ICategoryRepository {
 
     private repository: Repository<Category>;
-    private static INSTANCE: CategoriesRepository;
+    //private static INSTANCE: CategoriesRepository;
 
     constructor() {
         this.repository = getRepository(Category);

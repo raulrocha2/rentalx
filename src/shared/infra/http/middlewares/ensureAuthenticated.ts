@@ -40,3 +40,4 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
     }
 
 }
+
