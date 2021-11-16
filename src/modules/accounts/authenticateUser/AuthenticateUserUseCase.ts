@@ -47,7 +47,7 @@ class AuthenticateUserUseCase {
 
         const token = sign({}, "secretKeyJWT", {
             subject: user.id,
-            expiresIn: "1d"
+            expiresIn: "7d"
         });
 
         const tokenReturn: IResponse = {

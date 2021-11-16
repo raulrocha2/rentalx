@@ -32,7 +32,7 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
             id: user_id,
         }
 
-        next();
+        return next();
 
     } catch {
 

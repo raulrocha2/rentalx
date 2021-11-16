@@ -4,6 +4,7 @@ import { CreateCategoryController } from "@modules/cars/useCases/createCategory/
 import { ImportCategoryController } from "@modules/cars/useCases/importCategory/ImportCategoryController";
 import { ListCategoryController } from "@modules/cars/useCases/listCategories/ListCategoryController";
 import { ensureAuthenticated } from "@shared/infra/http/middlewares/ensureAuthenticated";
+import { ensureAdmin } from '../middlewares/ensureAdmin';
 
 
 
@@ -16,11 +17,11 @@ const createCategoryController = new CreateCategoryController();
 const importCategoryController = new ImportCategoryController();
 const listCategoryController = new ListCategoryController();
 
-categoriesRoutes.post("/new", createCategoryController.handle);
+categoriesRoutes.post("/new", ensureAuthenticated, ensureAdmin, createCategoryController.handle);
 
 categoriesRoutes.get("/", ensureAuthenticated, listCategoryController.handle);
 
 
-categoriesRoutes.post("/import", upload.single("file"), importCategoryController.handle);
+categoriesRoutes.post("/import", ensureAuthenticated, ensureAdmin, upload.single("file"), importCategoryController.handle);
 
 export { categoriesRoutes };
