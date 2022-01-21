@@ -1,6 +1,8 @@
 node_modules
 .vscode
-tmp/
+tmp/*
 corverage
 .env
-
+dist
+!tmp/.gitkeep
+ormconfig.json
