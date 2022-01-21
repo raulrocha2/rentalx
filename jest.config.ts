@@ -12,7 +12,12 @@ export default {
 
   preset: "ts-jest",
 
-
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '<rootDir>/src/modules/**/useCases/**/*.ts'
+  ],
+  coverageDirectory: 'coverage',
+  coverageReporters: ["lcov", "text-summary"],
   testMatch: ["**/*.spec.ts"],
 
 };
