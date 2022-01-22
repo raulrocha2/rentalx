@@ -7,12 +7,12 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "@modules": ["./src/modules"],
-          "@shared": ["./src/shared"],
-          "@config": ["./src/config"],
-          "@utils": ["./src/utils"]
-        }
-      }
+          "@modules": "./src/modules",
+          "@shared": "./src/shared",
+          "@config": "./src/config",
+          "@utils": "./src/utils"
+        },
+      },
     ],
     "babel-plugin-transform-typescript-metadata",
     ["@babel/plugin-proposal-decorators", { legacy: true }],
