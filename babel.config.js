@@ -1,5 +1,6 @@
 module.exports = {
-  preset: [["@babel/preset-env", { targets: { node: "current" } }],
+  presets: [
+    ["@babel/preset-env", { targets: { node: "current" }, loose: true }],
     "@babel/preset-typescript",
   ],
   plugins: [
@@ -8,14 +9,15 @@ module.exports = {
       {
         alias: {
           "@modules": "./src/modules",
-          "@shared": "./src/shared",
           "@config": "./src/config",
-          "@utils": "./src/utils"
+          "@shared": "./src/shared",
+          "@errors": "./src/errors",
+          "@utils": "./src/utils",
         },
       },
     ],
     "babel-plugin-transform-typescript-metadata",
     ["@babel/plugin-proposal-decorators", { legacy: true }],
     ["@babel/plugin-proposal-class-properties", { loose: true }],
-  ]
-}
+  ],
+};

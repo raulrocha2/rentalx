@@ -2085,24 +2085,12 @@ babel-plugin-polyfill-regenerator@^0.3.0:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.1"
 
-babel-plugin-syntax-typescript@7.0.0-alpha.19:
-  version "7.0.0-alpha.19"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-typescript/-/babel-plugin-syntax-typescript-7.0.0-alpha.19.tgz#fc5876863db297549f5d840d248eac3310241f84"
-  integrity sha512-jLuaWfoQsVr8/hmZtWB+86tZ5jYmOYV6kq70EkSUT7RR+gfeYOExS0FjObbbp+WExZNpBaRZvlyikNk3hCQGeQ==
-
 babel-plugin-transform-typescript-metadata@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-typescript-metadata/-/babel-plugin-transform-typescript-metadata-0.3.2.tgz#7a327842d8c36ffe07ee1b5276434e56c297c9b7"
   integrity sha512-mWEvCQTgXQf48yDqgN7CH50waTyYBeP2Lpqx4nNWab9sxEpdXVeKgfj1qYI2/TgUPQtNFZ85i3PemRtnXVYYJg==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
-
-babel-plugin-transform-typescript@^7.0.0-alpha.19:
-  version "7.0.0-alpha.19"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-typescript/-/babel-plugin-transform-typescript-7.0.0-alpha.19.tgz#9b06c066393d6752e6e539e8b0b5929a78feb5b1"
-  integrity sha512-OtkOYcYRffmC38/UjDZn2cvM2qarqDT748TbSJtVpNb7EvDLQcfPn9+0adk8oqmhc0lk+Ldy/2daGMNMxW0vuQ==
-  dependencies:
-    babel-plugin-syntax-typescript "7.0.0-alpha.19"
 
 babel-preset-current-node-syntax@^1.0.0:
   version "1.0.1"
@@ -4805,6 +4793,11 @@ nodemailer@^6.7.2:
   version "6.7.2"
   resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.7.2.tgz#44b2ad5f7ed71b7067f7a21c4fedabaec62b85e0"
   integrity sha512-Dz7zVwlef4k5R71fdmxwR8Q39fiboGbu3xgswkzGwczUfjp873rVxt1O46+Fh0j1ORnAC6L9+heI8uUpO6DT7Q==
+
+nodemodule@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/nodemodule/-/nodemodule-0.3.0.tgz#7b75da3fcab4442d526dab82e5562af42063c83d"
+  integrity sha1-e3XaP8q0RC1SbauC5VYq9CBjyD0=
 
 nopt@^5.0.0:
   version "5.0.0"
