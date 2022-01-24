@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 14.x
         
-      - name: install Dependecies
+      - name: Install Dependecies
         run: yarn
         
       - name: Build
@@ -29,7 +29,7 @@ jobs:
           username: ${{ secrets.SSH_USER_NAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "., !node_modules"
+          source: ".,!node_modules"
           target: "test"
         
      
