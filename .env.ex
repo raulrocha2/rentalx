@@ -10,3 +10,9 @@ DISK=local
 # # API URLs
 API_URL_LOCAL=
 FORGOT_MAIL_URL_DEV=
+
+# # Redis
+## Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
